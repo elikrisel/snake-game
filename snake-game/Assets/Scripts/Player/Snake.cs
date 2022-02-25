@@ -86,7 +86,7 @@ namespace elikrisel
         void Portal()
         {
 
-            transform.position = new Vector3(Random.Range(-7, 9), Random.Range(-10, 10), transform.position.z);
+            transform.position = new Vector3(Random.Range(-20, 20), Random.Range(-10, 10), transform.position.z);
             portalConnected = false;
         }
         #endregion
@@ -107,6 +107,8 @@ namespace elikrisel
                 }
 
             }
+        
+
 
         }
 
