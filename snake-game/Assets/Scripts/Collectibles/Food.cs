@@ -18,6 +18,7 @@ namespace elikrisel
 
         }
 
+        //Randomizing position
         public void Spawn()
         {
             int xPos = Random.Range(-25, 25);
@@ -33,8 +34,8 @@ namespace elikrisel
         {
             if (other.gameObject.CompareTag("Player"))
             {
-
                 Spawn();
+                ScoreHandler.instance.AddScore();
             }
         }
 
