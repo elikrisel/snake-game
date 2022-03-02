@@ -6,7 +6,9 @@ Description:
 Move the snake to collect points and avoid obstacles
 Controls: 
 WASD and Arrow keys to move the snake
+##
 
+##
 Collectibles:
 Food: Increment the score by one point.
 Speedboost: Snake gains a temporaily speedboost.
