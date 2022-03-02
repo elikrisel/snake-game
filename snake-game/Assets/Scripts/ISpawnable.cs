@@ -4,9 +4,12 @@ using UnityEngine;
 
 namespace elikrisel
 {
+    //Interface that's being used for all collectibles
     public interface ISpawnable
     {
-        void Spawn();
+
+
+        public void Spawn();
 
 
     }
