@@ -7,20 +7,26 @@ using UnityEngine.UI;
 namespace elikrisel
 {
     public class UIScript : MonoBehaviour
-    {
+    {/// <summary>
+    /// Simple as straight forward UI Script for button functionality
+    /// </summary>
+
         [Header("UI Components")]
         [SerializeField] private GameObject resumeButton;
         [SerializeField] private GameObject pauseButton;
-        
+        [SerializeField] private GameObject gameOverScreen;
+
         [SerializeField] private GameObject gameisPausedText;
         [SerializeField] private GameObject readyText;
         [SerializeField] private GameObject playButton;
 
-        
+     
         private void Start()
         {
             pauseButton.SetActive(true);
             resumeButton.SetActive(false);
+            gameOverScreen.SetActive(false);
+
             playButton.SetActive(true);
             readyText.SetActive(true);
             gameisPausedText.SetActive(false);
@@ -65,6 +71,14 @@ namespace elikrisel
             readyText.SetActive(false);
             Time.timeScale = 1;
         }
+        public void GameOver()
+        {
+
+            gameOverScreen.SetActive(true);
+            Time.timeScale = 0;
+        }
+
+
     }
 
 

@@ -6,23 +6,11 @@ using UnityEngine;
 namespace elikrisel
 {
     public class Screenwrap : MonoBehaviour
-    {   /*
-        public enum Walls
-        {
-            
-            Up,
-            Down,
-            Right,
-            Left
+    {
 
 
-
-        };
-        public Walls screenDirection;
-        */
-
-      
         //player is coming out the opposite way
+        #region Screenwrap Direction
         private void OnTriggerEnter2D(Collider2D other)
         {
             if (other.gameObject.CompareTag("Right"))
@@ -47,6 +35,7 @@ namespace elikrisel
                 transform.position = new Vector3(transform.position.x, 16, transform.position.z);
 
             }
+            #endregion
 
 
         }

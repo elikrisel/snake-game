@@ -7,11 +7,11 @@ namespace elikrisel
 {
     public class ScoreHandler : MonoBehaviour
     {
-
+        //Instance of score handler
         public static ScoreHandler instance;
 
         
-
+        
         [SerializeField] private Text scoreText;
         [SerializeField] private Text highscoreText;
 
@@ -37,7 +37,7 @@ namespace elikrisel
             score += 1;
             scoreText.text = "" + score.ToString();
             if(highScore < score)
-            {
+            {   
                 PlayerPrefs.SetInt("highscore", score);
             }
 
