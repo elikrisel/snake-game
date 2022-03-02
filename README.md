@@ -4,6 +4,7 @@ A experiment assignment for a 2d Snake game
 ##
 Description:
 Move the snake to collect points and avoid obstacles
+
 Controls: 
 WASD and Arrow keys to move the snake
 ##
